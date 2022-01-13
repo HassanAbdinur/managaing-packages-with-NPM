@@ -45,7 +45,7 @@ app.use(function(req, res, next){
 });
 
 // Error Middleware
-app.use(function(err, req, res, next) {
+app.use(err, req, res, next => {
   if(err) {
     res.status(err.status || 500)
       .type('txt')
