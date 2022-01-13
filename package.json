@@ -4,7 +4,8 @@
 	"version": "1.0",
 	"description": "This project will change the world",
 	"dependencies": {
-		"express": "^4.14.0"
+		"express": "^4.14.0",
+		"moment": "^2.14.0"
 	},
 	"keywords": [
 		"freecodecamp",
