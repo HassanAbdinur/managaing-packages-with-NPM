@@ -21,9 +21,5 @@
 	},
 	"engines": {
 		"node": "17.3.0"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://idontknow/todo.git"
 	}
 }
