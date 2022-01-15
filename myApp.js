@@ -4,7 +4,7 @@ var app = express();
 var bGround = require('fcc-express-bground');
 require('dotenv').config();
 
-app.use(function(req, res, next) {
+app.use((req, res, next) => {
     console.log(req.method + " " + req.path + " - " + req.ip);
     next();
 });
