@@ -4,6 +4,11 @@ var app = express();
 var bGround = require('fcc-express-bground');
 require('dotenv').config();
 
+app.use(function(req, res, next) {
+    console.log(req.method + " " + req.path + " - " + req.ip);
+    next();
+});
+
 app.get("/", (req, res) => {
     res.sendFile(__dirname + "/views/index.html");
   });
